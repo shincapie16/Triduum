@@ -35,7 +35,8 @@ export default {
   methods: {
     search(query) {
       this.loading = true
-      axios.get(`https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=${query}&origin=*&srprop=snippet&prop=info`)
+      axios.get(`https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=${query}&origin=*&srprop=snippet&exintro=1&prop=info`)
+
         .then(response => {
           this.results = response.data.query.search
           this.loading = false
