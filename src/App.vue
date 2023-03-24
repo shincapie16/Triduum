@@ -1,30 +1,50 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="container my-4">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center mb-4">Wikipedia Search</h1>
+        <search-form @search="search"></search-form>
+        <div v-if="loading" class="text-center">
+          <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+        <search-results v-else-if="results.length > 0" :results="results"></search-results>
+        <p v-else>No results found.</p>
+      </div>
+    </div>
+  </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import axios from 'axios'
+import SearchForm from './components/SearchForm.vue'
+import SearchResults from './components/SearchResults.vue'
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  components: {
+    SearchForm,
+    SearchResults
+  },
+  data() {
+    return {
+      loading: false,
+      results: []
+    }
+  },
+  methods: {
+    search(query) {
+      this.loading = true
+      axios.get(`https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=${query}&origin=*&srprop=snippet&prop=info`)
+        .then(response => {
+          this.results = response.data.query.search
+          this.loading = false
+        })
+        .catch(error => {
+          console.log(error)
+          this.loading = false
+        })
     }
   }
 }
-</style>
+</script>
