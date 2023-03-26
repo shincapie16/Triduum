@@ -1,11 +1,20 @@
-# tu-buscador-latino
+# Triduum
 
-## Project setup
+## Decripción
 ```
-npm install
+Se realizó un Proyecto en VueJs con el fin de consumir la API de Wikipedia para
+registrar las coincidencias en una tabla en donde se muestra el ID, el nombre del artículo
+y un Snippet (Fragmento) de descripción de dicho artículo. Se implementó Boostrap y Axios para
+gestionar todas las solicitudes HTTP.
 ```
 
-### Compiles and hot-reloads for development
+## Instalación
+```
+1. Clona este repositorio en tu máquina local.
+2. En la terminal, entra al directorio del proyecto: `cd nombre-del-proyecto`.
+3. Instala las dependencias del proyecto: `npm install`.
+```
+### Ejecución
 ```
 npm run serve
 ```
