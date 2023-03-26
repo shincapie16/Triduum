@@ -13,7 +13,7 @@
         <td>{{ result.title }}</td>
         <td v-html="stripTags(result.snippet)"></td>
       </tr>
-    </tbody>
+    </tbody>  
   </table>
 </template>
 
