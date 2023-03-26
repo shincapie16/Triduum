@@ -1,5 +1,5 @@
 <template>
-  <table class="table">
+  <table class="table" :class="{ 'table-light': !darkMode, 'table-dark': darkMode }">
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -16,7 +16,10 @@
     </tbody>  
   </table>
 </template>
+<style lang="scss">
+@import '../styles/style.scss';
 
+</style>
 <script>
 export default {
   props: {
@@ -25,6 +28,10 @@ export default {
       required: true
     }
   },
+  darkMode: {
+      type: Boolean,
+      required: true
+    },
   methods: {
   stripTags(str) {
     let div = document.createElement('div');
