@@ -9,17 +9,7 @@
     </form>
   </template>
   
-  <script>
-  export default {
-    data() {
-      return {
-        query: ''
-      }
-    },
-    methods: {
-      search() {
-        this.$emit('search', this.query)
-      }
-    }
-  }
-  </script>
+  <style lang="scss">
+  @import '../assets/styles/style.scss';
+  </style>
+  <script src="../assets/js/form.js"></script>
