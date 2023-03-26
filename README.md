@@ -14,27 +14,20 @@ gestionar todas las solicitudes HTTP.
 2. En la terminal, entra al directorio del proyecto:
 `cd nombre-del-proyecto`.
 
-3. Instala las dependencias del proyecto:
+3. Instala las dependencias del proyecto con el comando:
 `npm install`. 
 ### Ejecución
+Para ejecutar el proyecto y correrlo de forma remota y local utiliza:
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilar para ambiente de producción
 ```
 npm run build
 ```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
+### Para mejorar archivos con LINT
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
