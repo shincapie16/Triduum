@@ -1,4 +1,4 @@
-# Triduum
+# Tu Buscador Latino ( Prueba Dev. Junior Frontend - Triduum SASTriduum)
 
 ## Decripción
 
@@ -10,12 +10,20 @@ gestionar todas las solicitudes HTTP.
 
 ## Instalación
 
-1.  Clona este repositorio en tu máquina local.
+1.  Clonar el repositorio con:
+```
+git clone https://github.com/shincapie16/Triduum
+```
+
 2. En la terminal, entra al directorio del proyecto:
-`cd nombre-del-proyecto`.
+```
+cd nombre-del-proyecto
+```
 
 3. Instala las dependencias del proyecto con el comando:
-`npm install`. 
+```
+npm install`. 
+```
 ### Ejecución
 Para ejecutar el proyecto y correrlo de forma remota y local utiliza:
 ```
