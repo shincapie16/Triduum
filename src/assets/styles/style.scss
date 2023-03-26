@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap');
-
-$font-family-sans-serif: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto:wght@700&display=swap');
+// Fuentes importadas
+$font-family-roboto-serif: 'Roboto  ', sans-serif;
 $font-family-open-sans: 'Open Sans', sans-serif;
+
+//Colores
 $color-primary: #1f4068;
 $color-fontdark: #2374d6;
 $bg-light: #ffffff;
@@ -15,11 +17,15 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+
+
+
 .logo {
   max-width: 200px;
 }
 h1{
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-roboto-serif;
   font-weight: 900;
 }
 p{
@@ -36,10 +42,10 @@ p{
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: $bg-light !important;
 }
 .table-light {
-  background-color: #f8f9fa;
+  background-color: $bg-light;
   
 }
 .vh-100 {
@@ -51,9 +57,10 @@ p{
 }
 
 .dark-mode {
-  background-color: black;
+  background-color:$bg-dark;
   color: white;
 }
+
 .container-fluid {
   background-color: $bg-light;
   color: $text-dark;
@@ -82,6 +89,3 @@ p{
   overflow-y: auto;
 }
 
-.table-container-dark {
-  background-color: #1e1e1e;
-}

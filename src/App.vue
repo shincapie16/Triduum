@@ -16,8 +16,8 @@
 
         <!-- Si la búsqueda está en progreso, se muestra un spinner que indica que la página está cargando -->
         <div v-if="loading" class="text-center mt-5">
-          <div class="spinner-border text-primary" role="status">
-            <span class="sr-only">Cargando...</span>
+          <div class="spinner-border text-info" role="status">
+            <span class="sr-only">...</span>
           </div>
         </div>
 

@@ -12,7 +12,7 @@ export default {
     return {
       loading: false, // Variable booleana que indica si se está realizando una solicitud de búsqueda
       results: [], // Matriz que contiene los resultados de la búsqueda
-      darkMode: false // Variable booleana que indica si se encuentra en modo oscuro
+      darkMode: false,// Variable booleana que indica si se encuentra en modo oscuro
     }
   },
 

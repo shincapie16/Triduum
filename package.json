@@ -16,7 +16,8 @@
     "popper.js": "^1.16.1",
     "vue": "^3.2.13",
     "vue-good-table": "^2.21.11",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.0.3",
+    "vuejs-paginate": "^2.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
